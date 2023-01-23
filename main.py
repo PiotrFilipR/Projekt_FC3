@@ -10,7 +10,7 @@ suma_pustych_kilogramow = 0
 
 waga_najlzejszej_paczki = 20
 
-# numer_najlzejszej_paczki = None
+numer_najlzejszej_paczki = 0
 
 nr_elementu = 0
 
@@ -37,11 +37,11 @@ else:
         liczba_paczek_wyslanych += 1
         liczba_kilogramow_wyslanych += waga_paczki
         suma_pustych_kilogramow += (20 - waga_paczki)
-
+        numer_najlzejszej_paczki = liczba_paczek_wyslanych
 # Wyniki
 
 print(f"1. Liczba wysłanych paczek {liczba_paczek_wyslanych} \n"
       f"2. liczba wysłanych kilogramów {liczba_kilogramow_wyslanych} \n"
-      f"3. Suma pustych kilogramów w wysłanych paczkach {suma_pustych_kilogramow}")
+      f"3. Suma pustych kilogramów w wysłanych paczkach {suma_pustych_kilogramow} \n"
+      f"4. Najwięcej pustych kilogramów ma paczka nr. {numer_najlzejszej_paczki}")
 
-        
